@@ -2,6 +2,7 @@
 2020.2
 Nov 18 2020
 09:47:47
+C:/Users/gratt/OneDrive/Documents/GitHub/S4_APP1_Problematique/Problematique/pb_APP_log_comb.srcs/sim_1/imports/Problematique/TestBin2DualBCD_NS.vhd,1746391932,vhdl,,,,bin2dualbcd_ns_tb,,,,,,,,
 C:/Users/gratt/OneDrive/Documents/GitHub/S4_APP1_Problematique/Problematique/pb_APP_log_comb.srcs/sim_1/imports/VivadoWork/TestDecoder_3_8.vhd,1746377383,vhdl,,,,decoder_3_8_tb,,,,,,,,
 C:/Users/gratt/OneDrive/Documents/GitHub/S4_APP1_Problematique/Problematique/pb_APP_log_comb.srcs/sim_1/imports/VivadoWork/TestFct_2_3.vhd,1746376642,vhdl,,,,fct_2_3_tb,,,,,,,,
 C:/Users/gratt/OneDrive/Documents/GitHub/S4_APP1_Problematique/Problematique/pb_APP_log_comb.srcs/sim_1/imports/VivadoWork/TestParite.vhd,1746380028,vhdl,,,,parite_tb,,,,,,,,
@@ -14,7 +15,10 @@ C:/Users/gratt/OneDrive/Documents/GitHub/S4_APP1_Problematique/Problematique/pb_
 C:/Users/gratt/OneDrive/Documents/GitHub/S4_APP1_Problematique/Problematique/pb_APP_log_comb.srcs/sources_1/new/Add1bitA.vhd,1746053522,vhdl,,,,add1bita,,,,,,,,
 C:/Users/gratt/OneDrive/Documents/GitHub/S4_APP1_Problematique/Problematique/pb_APP_log_comb.srcs/sources_1/new/Add1bitB.vhd,1746053292,vhdl,,,,add1bitb,,,,,,,,
 C:/Users/gratt/OneDrive/Documents/GitHub/S4_APP1_Problematique/Problematique/pb_APP_log_comb.srcs/sources_1/new/Add4bits.vhd,1746055773,vhdl,,,,add4bits,,,,,,,,
+C:/Users/gratt/OneDrive/Documents/GitHub/S4_APP1_Problematique/Problematique/pb_APP_log_comb.srcs/sources_1/new/Bin2DualBCD_NS.vhd,1746390734,vhdl,,,,bin2dualbcd_ns,,,,,,,,
+C:/Users/gratt/OneDrive/Documents/GitHub/S4_APP1_Problematique/Problematique/pb_APP_log_comb.srcs/sources_1/new/Bin2DualBCD_S.vhd,1746389880,vhdl,,,,bin2dualbcd_s,,,,,,,,
 C:/Users/gratt/OneDrive/Documents/GitHub/S4_APP1_Problematique/Problematique/pb_APP_log_comb.srcs/sources_1/new/Decodeur_3_8.vhd,1746375232,vhdl,,,,decodeur_3_8,,,,,,,,
 C:/Users/gratt/OneDrive/Documents/GitHub/S4_APP1_Problematique/Problematique/pb_APP_log_comb.srcs/sources_1/new/Fct2_3.vhd,1746213192,vhdl,,,,fct2_3,,,,,,,,
+C:/Users/gratt/OneDrive/Documents/GitHub/S4_APP1_Problematique/Problematique/pb_APP_log_comb.srcs/sources_1/new/Moins_5.vhd,1746389880,vhdl,,,,moins_5,,,,,,,,
 C:/Users/gratt/OneDrive/Documents/GitHub/S4_APP1_Problematique/Problematique/pb_APP_log_comb.srcs/sources_1/new/Parite.vhd,1746380150,vhdl,,,,parite,,,,,,,,
 C:/Users/gratt/OneDrive/Documents/GitHub/S4_APP1_Problematique/Problematique/pb_APP_log_comb.srcs/sources_1/new/Thermo2Bin.vhd,1746206432,vhdl,,,,thermo2bin,,,,,,,,
