@@ -28,11 +28,11 @@ USE UNISIM.Vcomponents.ALL;
 --> L'entity peut porter le nom que vous voulez mais il est de bonne pratique 
 --> d'utiliser le nom du module à tester avec un suffixe par exemple.
 
-ENTITY Fct_2_3_tb IS          --> Remarquez que l'ENTITY est vide et doit le demeurer pour un test bench !!!  
-END Fct_2_3_tb;
+ENTITY Add4bits_tb IS          --> Remarquez que l'ENTITY est vide et doit le demeurer pour un test bench !!!  
+END Add4bits_tb;
 
 
-ARCHITECTURE behavioral OF Fct_2_3_tb IS 
+ARCHITECTURE behavioral OF Add4bits_tb IS 
 
 --> Remplacer ce COMPONENT par celui de votre COMPONENT à tester 
     -- Note: vous pouvez copier la partie PORT ( .. ) de l'entity de votre code VHDL 
@@ -40,17 +40,25 @@ ARCHITECTURE behavioral OF Fct_2_3_tb IS
 --> Si vous voulez comparer 2 modules VHDL, vous pouvez déclarer 2 COMPONENTS 
     -- distincts avec leurs PORT MAP respectif. 
 
-   COMPONENT Fct2_3
-   Port ( ADCbin : in STD_LOGIC_VECTOR (3 downto 0);
-           A2_3 : out STD_LOGIC_VECTOR (2 downto 0));
-   END COMPONENT;
+   COMPONENT Add4bits
+   Port ( 
+               X : in STD_LOGIC_VECTOR (3 downto 0);
+               Y : in STD_LOGIC_VECTOR (3 downto 0);
+               Ci : in STD_LOGIC;
+               S : out STD_LOGIC_VECTOR (3 downto 0);
+               Co : out STD_LOGIC
+               );
+         end component;
    
 --> Générez des signaux internes au test bench avec des noms associés et les même types que dans le port
     -- Note: les noms peuvent être identiques, dans l'exemple on a ajouté un suffixe pour
     -- identifier clairement le signal qui appartient au test bench
 
-   SIGNAL ADCbin_sim    : STD_LOGIC_VECTOR (3 downto 0);
-   SIGNAL A2_3_sim      : STD_LOGIC_VECTOR (2 downto 0);
+   SIGNAL X_sim         : STD_LOGIC_VECTOR (3 downto 0);
+   SIGNAL Y_sim         : STD_LOGIC_VECTOR (3 downto 0);
+   SIGNAL Ci_sim        : STD_LOGIC;
+   SIGNAL S_sim         : STD_LOGIC_VECTOR (3 downto 0);
+   signal Co_sim        : std_logic;
 
 --> S'il y a plusieurs bits en entrée pour lesquels il faut définir des valeurs de test, 
     -- par exemple a, b, c dans l'exemple présent, on recommande de créer un vecteur de test,
@@ -72,14 +80,17 @@ BEGIN
   -- UUT Unit Under Test: ce nom est habituel mais non imposé.
   -- Si on simule deux composantes, on pourrait avoir UUT1, UUT2 par exemple
   
-  UUT: Fct2_3 PORT MAP(
-      ADCbin => ADCbin_sim, 
-      A2_3 => A2_3_sim
+  UUT: Add4bits PORT MAP(
+      X => X_sim, 
+      Y => Y_sim, 
+      Ci => Ci_sim, 
+      S => S_sim,
+      Co => Co_sim
    );
 
  --> on assigne les signaux du vecteur de test vers les signaux connectés au port map. 
-ADCbin_sim <= vect_test; 
- 
+    X_sim <= vect_test;
+    Y_sim <= "1011";
 -- *** Test Bench - User Defined Section ***
 -- l'intérêt de cette structure de test bench est que l'on recopie la table de vérité.
 

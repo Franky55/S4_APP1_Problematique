@@ -21,6 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -38,7 +39,24 @@ end Moins_5;
 
 architecture Behavioral of Moins_5 is
 
+component Add4bits is
+    Port ( X : in STD_LOGIC_VECTOR (3 downto 0);
+           Y : in STD_LOGIC_VECTOR (3 downto 0);
+           Ci : in STD_LOGIC;
+           S : out STD_LOGIC_VECTOR (3 downto 0);
+           Co : out STD_LOGIC);
+    end component;
+
+signal temp : std_logic := '0';
 begin
 
+    inst_add4bits: Add4bits
+        port map (
+            X   => ADCbin,
+            Y   => "1011",
+            Ci  => '0',
+            S   => Moins5,
+            Co  => temp
+        ); 
 
 end Behavioral;

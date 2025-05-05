@@ -26,6 +26,9 @@ vhdl xil_defaultlib  \
 "../../../../pb_APP_log_comb.srcs/sim_1/imports/VivadoWork/TestDecoder_3_8.vhd" \
 "../../../../pb_APP_log_comb.srcs/sim_1/imports/VivadoWork/TestParite.vhd" \
 "../../../../pb_APP_log_comb.srcs/sim_1/imports/Problematique/TestBin2DualBCD_NS.vhd" \
+"../../../../pb_APP_log_comb.srcs/sim_1/imports/Problematique/TestMoins5.vhd" \
+"../../../../pb_APP_log_comb.srcs/sim_1/imports/Problematique/TestAdd4bits.vhd" \
+"../../../../pb_APP_log_comb.srcs/sim_1/imports/Problematique/TestBin2DualBCD_S.vhd" \
 
 # Do not sort compile order
 nosort

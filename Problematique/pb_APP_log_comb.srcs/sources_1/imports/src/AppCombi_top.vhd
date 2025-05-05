@@ -90,7 +90,23 @@ architecture BEHAVIORAL of AppCombi_top is
     Port ( A2_3 : in STD_LOGIC_VECTOR (2 downto 0);
            LED : out STD_LOGIC_VECTOR (7 downto 0));
     end component;
+    
+    component Bin2DualBCD_NS is
+    Port ( ADCbin : in STD_LOGIC_VECTOR (3 downto 0);
+           Dizaines : out STD_LOGIC_VECTOR (3 downto 0);
+           Unites_ns : out STD_LOGIC_VECTOR (3 downto 0));
+   end component;
    
+   component Bin2DualBCD_S is
+   Port ( Moins5 : in STD_LOGIC_VECTOR (3 downto 0);
+           Code_signe : out STD_LOGIC_VECTOR (3 downto 0);
+           Unites_s : out STD_LOGIC_VECTOR (3 downto 0));
+    end component;
+    
+    component Moins_5 is
+    Port ( ADCbin : in STD_LOGIC_VECTOR (3 downto 0);
+           Moins5 : out STD_LOGIC_VECTOR (3 downto 0));
+    end component;
 
 begin
     
