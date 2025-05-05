@@ -43,7 +43,7 @@ ARCHITECTURE behavioral OF Bin2DualBCD_S_tb IS
    COMPONENT Bin2DualBCD_S
    Port ( Moins5 : in STD_LOGIC_VECTOR (3 downto 0);
            Code_signe : out STD_LOGIC_VECTOR (3 downto 0);
-           Unites_s : out STD_LOGIC_VECTOR (3 downto 0));
+           Unite_s : out STD_LOGIC_VECTOR (3 downto 0));
    END COMPONENT;
    
 --> Générez des signaux internes au test bench avec des noms associés et les même types que dans le port
@@ -52,7 +52,7 @@ ARCHITECTURE behavioral OF Bin2DualBCD_S_tb IS
 
    SIGNAL Moins5_sim        : STD_LOGIC_VECTOR (3 downto 0);
    SIGNAL Code_signe_sim    : STD_LOGIC_VECTOR (3 downto 0);
-   SIGNAL Unites_s_sim      : STD_LOGIC_VECTOR (3 downto 0);
+   SIGNAL Unite_s_sim      : STD_LOGIC_VECTOR (3 downto 0);
 
 --> S'il y a plusieurs bits en entrée pour lesquels il faut définir des valeurs de test, 
     -- par exemple a, b, c dans l'exemple présent, on recommande de créer un vecteur de test,
@@ -77,7 +77,7 @@ BEGIN
   UUT: Bin2DualBCD_S PORT MAP(
       Moins5 => Moins5_sim, 
       Code_signe => Code_signe_sim, 
-      Unites_s => Unites_s_sim
+      Unite_s => Unite_s_sim
    );
 
  --> on assigne les signaux du vecteur de test vers les signaux connectés au port map. 

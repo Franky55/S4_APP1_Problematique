@@ -17,6 +17,8 @@ vhdl xil_defaultlib  \
 "../../../../pb_APP_log_comb.srcs/sources_1/new/Moins_5.vhd" \
 "../../../../pb_APP_log_comb.srcs/sources_1/new/Bin2DualBCD_NS.vhd" \
 "../../../../pb_APP_log_comb.srcs/sources_1/new/Bin2DualBCD_S.vhd" \
+"../../../../pb_APP_log_comb.srcs/sources_1/new/Mux.vhd" \
+"../../../../pb_APP_log_comb.srcs/sources_1/new/Bin2DualBCD.vhd" \
 
 vhdl2008 xil_defaultlib  \
 "../../../../pb_APP_log_comb.srcs/sim_1/imports/verif/AppCombi_top_tb.vhd" \
@@ -29,6 +31,8 @@ vhdl xil_defaultlib  \
 "../../../../pb_APP_log_comb.srcs/sim_1/imports/Problematique/TestMoins5.vhd" \
 "../../../../pb_APP_log_comb.srcs/sim_1/imports/Problematique/TestAdd4bits.vhd" \
 "../../../../pb_APP_log_comb.srcs/sim_1/imports/Problematique/TestBin2DualBCD_S.vhd" \
+"../../../../pb_APP_log_comb.srcs/sim_1/imports/Problematique/TestBin2DualBCD.vhd" \
+"../../../../pb_APP_log_comb.srcs/sim_1/imports/Problematique/TestMux.vhd" \
 
 # Do not sort compile order
 nosort
