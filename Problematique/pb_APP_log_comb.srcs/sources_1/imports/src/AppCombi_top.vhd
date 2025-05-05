@@ -124,6 +124,12 @@ architecture BEHAVIORAL of AppCombi_top is
            DAFF0 : out STD_LOGIC_VECTOR (3 downto 0);
            DAFF1 : out STD_LOGIC_VECTOR (3 downto 0));
     end component;
+    
+    component Thermo2Bin is
+    Port ( ADCth : in STD_LOGIC_VECTOR (11 downto 0);
+           ADCbin : out STD_LOGIC_VECTOR (3 downto 0);
+           erreur : out STD_LOGIC);
+    end component;
 
 begin
     
@@ -144,6 +150,13 @@ begin
            o_AFFSSD_Sim   => open,   -- ne pas modifier le "open". Ligne pour simulations seulement.
            o_AFFSSD       => o_SSD   -- sorties directement adaptees au connecteur PmodSSD
        ); 
+           
+    int_Thermo2Bin : Thermo2Bin
+    port map( 
+           ADCth => i_ADC_th,
+           ADCbin => d_ADCbin,
+           erreur => d_erreur
+           );
            
     inst_Fct2_3 :  Fct2_3 
        port map (
