@@ -48,7 +48,7 @@ architecture Behavioral of Mux is
 
 begin
     
-    process(BTN, S2)
+    process(BTN, S2, ADCbin, Dizaines, Unites_ns, Code_signe, Unite_s, erreur)
         begin
         
         if erreur = '0' then
