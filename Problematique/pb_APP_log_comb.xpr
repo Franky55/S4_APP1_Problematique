@@ -298,6 +298,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sim_1/imports/Problematique/TestThermo2Bin_4Bits.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/TestThermo2Bin_4Bits.vhd"/>
+          <Attr Name="ImportTime" Val="1746051496"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="Mux_tb"/>
