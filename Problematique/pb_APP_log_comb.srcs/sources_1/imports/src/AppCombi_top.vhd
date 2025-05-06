@@ -36,7 +36,8 @@ entity AppCombi_top is
           o_DEL2      : out   std_logic;
           o_DEL3      : out   std_logic;
           o_SSD       : out   std_logic_vector (7 downto 0); -- vers cnnecteur pmod afficheur 7 segments
-          o_pmodled   : out   std_logic_vector (7 downto 0)  -- vers connecteur pmod 8 DELs
+          o_pmodled   : out   std_logic_vector (7 downto 0); -- vers connecteur pmod 8 DELs
+          o_led       : out   std_logic_vector (3 downto 0)
           );
 end AppCombi_top;
  
@@ -139,8 +140,8 @@ begin
        port map (
            clk    => clk_5MHz,
            -- donnee a afficher definies sur 8 bits : chiffre hexa position 1 et 0
-           i_AFF1  => d_AFF1, 
-           i_AFF0  => d_AFF0,
+           i_AFF1  => d_AFF0, 
+           i_AFF0  => d_AFF1,
            o_AFFSSD_Sim   => open,   -- ne pas modifier le "open". Ligne pour simulations seulement.
            o_AFFSSD       => o_SSD   -- sorties directement adaptees au connecteur PmodSSD
        ); 
@@ -193,6 +194,10 @@ begin
            DAFF0 => d_AFF0,
            DAFF1 => d_AFF1
        );
+       
+       o_DEL2 <= d_Parite;
+       o_DEL3 <= d_S_1Hz;
+       o_led(0) <= d_Parite;
                      
 end BEHAVIORAL;
 
