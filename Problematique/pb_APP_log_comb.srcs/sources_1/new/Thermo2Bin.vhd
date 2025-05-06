@@ -103,6 +103,13 @@ begin
            S    => ADCbin
            );
            
-           erreur <= erreur_1 OR erreur_2 OR erreur_3;
-    
+    process(out_1, out_2, out_3) is
+        begin
+            if (out_2 /= "0000" AND out_1(3) = '0') or
+               (out_3 /= "0000" AND out_2(3) = '0') then
+                erreur <= '1';
+            else
+                erreur <= erreur_1 OR erreur_2 OR erreur_3;
+            end if;
+    end process;
 end Behavioral;
