@@ -49,6 +49,7 @@ architecture Behavioral of Thermo2Bin is
     signal carry : std_logic;
     
     
+    
     component Thermo2Bin_4Bits is
     Port ( ADC4Bits : in STD_LOGIC_VECTOR (3 downto 0);
            ADCOut4Bits : out STD_LOGIC_VECTOR (3 downto 0);
@@ -103,13 +104,15 @@ begin
            S    => ADCbin
            );
            
-    process(out_1, out_2, out_3) is
+    process(ADCth) is
         begin
-            if (out_2 /= "0000" AND out_1(3) = '0') or
-               (out_3 /= "0000" AND out_2(3) = '0') then
+            if erreur_1 = '1' or erreur_2 = '1' or erreur_3 = '1' then
+                erreur <= '1';
+            elsif (ADCth(7 downto 4) /= "0000" AND ADCth(3) = '0') or
+               (ADCth(11 downto 8) /= "0000" AND ADCth(7) = '0') then
                 erreur <= '1';
             else
-                erreur <= erreur_1 OR erreur_2 OR erreur_3;
+                erreur <= '0';
             end if;
     end process;
 end Behavioral;
