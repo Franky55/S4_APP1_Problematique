@@ -61,8 +61,8 @@ begin
                  DAFF0 <= Dizaines;
                  DAFF1 <= Unites_ns;
               when "01" =>
-                 DAFF0 <= ADCbin;
-                 DAFF1 <= "0000";
+                 DAFF0 <= "0000";
+                 DAFF1 <= ADCbin;
               when "10" =>
                  DAFF0 <= Code_signe;
                  DAFF1 <= Unite_s;
