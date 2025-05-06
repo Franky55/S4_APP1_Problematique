@@ -63,7 +63,7 @@ ARCHITECTURE behavioral OF Thermo2Bin_tb IS
    
 --> Déclarez la constante PERIOD qui est utilisée pour la simulation
 
-   CONSTANT PERIOD    : time := 10 ns;                  --  *** à ajouter avant le premier BEGIN
+   CONSTANT PERIOD    : time := 20 ns;                  --  *** à ajouter avant le premier BEGIN
 
 --> Il faut faire un port map entre vos signaux internes et le component à tester
 --> NOTE: Si vous voulez comparer 2 modules VHDL, vous devez génréer 2 port maps 
@@ -110,7 +110,48 @@ ADCth_sim <= vect_test;
          wait for PERIOD; vect_test <="000000000100";
          wait for PERIOD; vect_test <="000000000110";
          wait for PERIOD; vect_test <="000000101111";
+         
+         wait for PERIOD; vect_test <="111111110000";
+         wait for PERIOD; vect_test <="111111100001";
+         wait for PERIOD; vect_test <="111111000011";
+         wait for PERIOD; vect_test <="111110000111";
          wait for PERIOD; vect_test <="111100001111";
+         wait for PERIOD; vect_test <="111000011111";
+         wait for PERIOD; vect_test <="110000111111";
+         wait for PERIOD; vect_test <="100001111111";
+         
+         wait for PERIOD; vect_test <="111111111000";
+         wait for PERIOD; vect_test <="111111110001";
+         wait for PERIOD; vect_test <="111111100011";
+         wait for PERIOD; vect_test <="111111000111";
+         wait for PERIOD; vect_test <="111110001111";
+         wait for PERIOD; vect_test <="111100011111";
+         wait for PERIOD; vect_test <="111000111111";
+         wait for PERIOD; vect_test <="110001111111";
+         wait for PERIOD; vect_test <="100011111111";
+         
+         wait for PERIOD; vect_test <="111111111100";
+         wait for PERIOD; vect_test <="111111111001";
+         wait for PERIOD; vect_test <="111111110011";
+         wait for PERIOD; vect_test <="111111100111";
+         wait for PERIOD; vect_test <="111111001111";
+         wait for PERIOD; vect_test <="111110011111";
+         wait for PERIOD; vect_test <="111100111111";
+         wait for PERIOD; vect_test <="111001111111";
+         wait for PERIOD; vect_test <="110011111111";
+         wait for PERIOD; vect_test <="100111111111";
+         
+         wait for PERIOD; vect_test <="111111111110";
+         wait for PERIOD; vect_test <="111111111101";
+         wait for PERIOD; vect_test <="111111111011";
+         wait for PERIOD; vect_test <="111111110111";
+         wait for PERIOD; vect_test <="111111101111";
+         wait for PERIOD; vect_test <="111111011111";
+         wait for PERIOD; vect_test <="111110111111";
+         wait for PERIOD; vect_test <="111101111111";
+         wait for PERIOD; vect_test <="111011111111";
+         wait for PERIOD; vect_test <="110111111111";
+         wait for PERIOD; vect_test <="101111111111";
                   
          WAIT; -- will wait forever
    END PROCESS;
