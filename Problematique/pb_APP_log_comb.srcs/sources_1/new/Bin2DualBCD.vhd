@@ -58,21 +58,18 @@ COMPONENT Bin2DualBCD_NS
                ADCbin : in STD_LOGIC_VECTOR (3 downto 0);
                Moins5 : out STD_LOGIC_VECTOR (3 downto 0)
                );
-   end component;  
-     signal ADCbin_in   : STD_LOGIC_VECTOR (3 downto 0);
+   end component;
      signal Moins5_temp     : STD_LOGIC_VECTOR (3 downto 0);
 begin
 
-    ADCbin_in <= ADCbin; 
-
     UUT: Bin2DualBCD_NS PORT MAP(
-      ADCbin => ADCbin_in, 
+      ADCbin => ADCbin, 
       Dizaines => Dizaines, 
       Unites_ns => Unites_ns
    );
    
    UUT2: Moins_5 PORT MAP(
-      ADCbin => ADCbin_in, 
+      ADCbin => ADCbin, 
       Moins5 => Moins5_temp
    );
    
