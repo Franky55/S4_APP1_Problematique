@@ -103,7 +103,12 @@ ADCth_sim <= vect_test;
          wait for PERIOD; vect_test <="001111111111";
          wait for PERIOD; vect_test <="011111111111";
          wait for PERIOD; vect_test <="111111111111";
+         --wait for PERIOD; vect_test <="000000000010";  --> Code avec erreur
+         wait for PERIOD; vect_test <="010000000010";  --> Code avec erreur
          wait for PERIOD; vect_test <="000000000010";  --> Code avec erreur
+         wait for PERIOD; vect_test <="000000000010";  --> Code avec erreur
+         wait for PERIOD; vect_test <="000000000100";
+         wait for PERIOD; vect_test <="000000000110";
          wait for PERIOD; vect_test <="000000101111";
          wait for PERIOD; vect_test <="111100001111";
                   

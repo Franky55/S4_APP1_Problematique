@@ -106,13 +106,11 @@ begin
            
     process(ADCth) is
         begin
-            if erreur_1 = '1' or erreur_2 = '1' or erreur_3 = '1' then
-                erreur <= '1';
-            elsif (ADCth(7 downto 4) /= "0000" AND ADCth(3) = '0') or
+            if (ADCth(7 downto 4) /= "0000" AND ADCth(3) = '0') or
                (ADCth(11 downto 8) /= "0000" AND ADCth(7) = '0') then
                 erreur <= '1';
             else
-                erreur <= '0';
+                erreur <= erreur_1 or erreur_2 or erreur_3;
             end if;
     end process;
 end Behavioral;
