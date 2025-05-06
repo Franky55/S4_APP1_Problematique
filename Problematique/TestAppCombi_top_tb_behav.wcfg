@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="TestAppCombi_top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="TestAppCombi_top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="249401fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="190"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/TestAppCombi_top_tb/i_S1_sim" type="logic">
+      <obj_property name="ElementShortName">i_S1_sim</obj_property>
+      <obj_property name="ObjectShortName">i_S1_sim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestAppCombi_top_tb/i_S2_sim" type="logic">
+      <obj_property name="ElementShortName">i_S2_sim</obj_property>
+      <obj_property name="ObjectShortName">i_S2_sim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestAppCombi_top_tb/i_btn_sim" type="array">
+      <obj_property name="ElementShortName">i_btn_sim[3:0]</obj_property>
+      <obj_property name="ObjectShortName">i_btn_sim[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestAppCombi_top_tb/i_ADC_th_sim" type="array">
+      <obj_property name="ElementShortName">i_ADC_th_sim[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_ADC_th_sim[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestAppCombi_top_tb/sysclk_sim" type="logic">
+      <obj_property name="ElementShortName">sysclk_sim</obj_property>
+      <obj_property name="ObjectShortName">sysclk_sim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestAppCombi_top_tb/o_DEL2_sim" type="logic">
+      <obj_property name="ElementShortName">o_DEL2_sim</obj_property>
+      <obj_property name="ObjectShortName">o_DEL2_sim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestAppCombi_top_tb/o_DEL3_sim" type="logic">
+      <obj_property name="ElementShortName">o_DEL3_sim</obj_property>
+      <obj_property name="ObjectShortName">o_DEL3_sim</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestAppCombi_top_tb/o_SSD_sim" type="array">
+      <obj_property name="ElementShortName">o_SSD_sim[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_SSD_sim[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestAppCombi_top_tb/o_pmodled_sim" type="array">
+      <obj_property name="ElementShortName">o_pmodled_sim[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_pmodled_sim[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestAppCombi_top_tb/o_led_sim" type="array">
+      <obj_property name="ElementShortName">o_led_sim[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_led_sim[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestAppCombi_top_tb/vect_test" type="array">
+      <obj_property name="ElementShortName">vect_test[17:0]</obj_property>
+      <obj_property name="ObjectShortName">vect_test[17:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestAppCombi_top_tb/PERIOD" type="other">
+      <obj_property name="ElementShortName">PERIOD</obj_property>
+      <obj_property name="ObjectShortName">PERIOD</obj_property>
+   </wvobject>
+   <wvobject fp_name="/TestAppCombi_top_tb/UUT/inst_aff/o_AFFSSD_Sim" type="array">
+      <obj_property name="ElementShortName">o_AFFSSD_Sim[2:1]</obj_property>
+      <obj_property name="ObjectShortName">o_AFFSSD_Sim[2:1]</obj_property>
+   </wvobject>
+</wave_config>
