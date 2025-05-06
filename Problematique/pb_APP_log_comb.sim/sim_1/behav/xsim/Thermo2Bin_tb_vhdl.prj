@@ -34,6 +34,8 @@ vhdl xil_defaultlib  \
 "../../../../pb_APP_log_comb.srcs/sim_1/imports/Problematique/TestBin2DualBCD_S.vhd" \
 "../../../../pb_APP_log_comb.srcs/sim_1/imports/Problematique/TestBin2DualBCD.vhd" \
 "../../../../pb_APP_log_comb.srcs/sim_1/imports/Problematique/TestMux.vhd" \
+"../../../../pb_APP_log_comb.srcs/sim_1/imports/Problematique/TestThermo2Bin_4Bits.vhd" \
+"../../../../pb_APP_log_comb.srcs/sim_1/imports/Problematique/TestThermo2Bin.vhd" \
 
 # Do not sort compile order
 nosort
