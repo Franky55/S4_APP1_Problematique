@@ -48,12 +48,6 @@ architecture BEHAVIORAL of AppCombi_top is
    signal d_s_1Hz           : std_logic;
    signal clk_5MHz          : std_logic;
    --
-   signal d_opa             : std_logic_vector (3 downto 0):= "0000";   -- operande A
-   signal d_opb             : std_logic_vector (3 downto 0):= "0000";   -- operande B
-   signal d_cin             : std_logic := '0';                         -- retenue entree
-   signal d_sum             : std_logic_vector (3 downto 0):= "0000";   -- somme
-   signal d_cout            : std_logic := '0';                         -- retenue sortie
-   --
    signal d_AFF0            : std_logic_vector (3 downto 0):= "0000";
    signal d_AFF1            : std_logic_vector (3 downto 0):= "0000";
    
